@@ -26,7 +26,7 @@ Real unit tests are absent, but you can test basic functionality with
     
     pubmed = PubMedClient()
 
-defaults to writing a file called `.bioscraping.pubmed.sqlite.db`
+defaults to writing a file called `.bioscraping.pubmed.sqlite.db`. Use `PubMedClient(":memory:")` for in-memory data storage.
 
     pubmed.fetch(<PMID>)
     
@@ -38,7 +38,7 @@ Returns text with author and abstract for PMID.
     
     uniprot = UniprotClient()
 
-defaults to writing a file called `.bioscraping.uniprot.sqlite.db`
+defaults to writing a file called `.bioscraping.uniprot.sqlite.db`. Use `UniprotClient(":memory:")` for in-memory data storage.
 
     uniprot.fetch(<Uniprot ID>)
 
