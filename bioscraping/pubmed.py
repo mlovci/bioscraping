@@ -21,7 +21,6 @@ class PubMedClient(Scraper):
         data = urllib.parse.urlencode(params)
         request = urllib.request.Request(url, data)
         full_url = "&".join([url, data])
-        print(full_url)
         response = urllib.request.urlopen(request)
         page = response.read(200000).decode("utf-8")
 
