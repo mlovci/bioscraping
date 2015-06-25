@@ -30,7 +30,7 @@ class Scraper(object):
         parsed = self._parse(page)
         return parsed
 
-    def __init__(self, local_database=None,
+    def __init__(self, local_database=":memory:",
                  *args, **kwargs):
 
         self.local_database = local_database
