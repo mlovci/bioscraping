@@ -12,7 +12,7 @@ So far, implemented:
 #Install
 
 ##Python 2.7.x and 3.x
-`pip install .`
+`pip install bioscraping`
 
 #Test
 
